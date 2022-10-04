@@ -1,0 +1,22 @@
+{
+  "name": "blazor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:build": "npx tailwind build ./wwwroot/css/site.css -o ./wwwroot/css/output.css",
+    "watch:tw": "npx tailwind build ./wwwroot/css/site.css -o ./wwwroot/css/output.css --watch",
+    "watch:run": "dotnet watch run",
+    "watch:run:tw": "start /MIN npm run watch:tw && start /MIN npm run watch:run",
+    "dev": "npm run watch:run:tw"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8"
+  }
+}
